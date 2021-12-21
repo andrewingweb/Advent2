@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="all" />
+    <title>Advent Calendar</title>
+    <meta
+      name="description"
+      content="Visit the Online Advent Christmas Coundown Calendar every day in December to open a door and find out a bit more about Christmas! Coundown to Christmas!"
+    />
+    <link rel="canonical" href="https://www.whychristmas.com/adventcalendar/" />
+    <link rel="home" href="https://www.whychristmas.com/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@whychristmas" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Online Advent Calendar" />
+    <meta
+      property="og:image"
+      content="https://www.whychristmas.com/adventcalendar/i/share.png"
+    />
+    <meta
+      property="og:description"
+      content="Visit the Online Advent Christmas Coundown Calendar every day in December to open a door and find out a bit more about Christmas! Coundown to Christmas!"
+    />
+    <meta
+      property="og:url"
+      content="https://www.whychristmas.com/adventcalendar/"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#226a00" />
+    <meta name="msapplication-TileColor" content="#226a00" />
+    <meta name="theme-color" content="#226a00" />
+    <link
+      rel="preload"
+      as="font"
+      href="f/dellarespira-regular.woff2"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      as="font"
+      href="f/dellarespira-regular.woff"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link href="style.css" rel="stylesheet" media="all" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Christmas is coming!</h1>
+    </header>
+    <main>
+      <div id="calendar">
+        <ul>
+          <li id="day4">
+            <button
+              class="js-modal button"
+              data-modal-prefix-class="simple"
+              data-modal-content-id="day4_modal"
+              data-modal-describedby-id="modal_description"
+              data-modal-close-text="Close"
+              data-modal-close-title="Close"
+              data-modal-title="Day 4"
+            >
+              4
+            </button>
+          </li>
+          <li id="day7">
+            <button
+              class="js-modal button"
+              data-modal-prefix-class="simple"
+              data-modal-content-id="day7_modal"
+              data-modal-describedby-id="modal_description"
+              data-modal-close-text="Close"
+              data-modal-close-title="Close"
+              data-modal-title="Day 7"
+            >
+              7
+            </button>
+          </li>
+          <li id="day17">
+            <button
+              class="js-modal button"
+              data-modal-prefix-class="simple"
+              data-modal-content-id="day17_modal"
+              data-modal-describedby-id="modal_description"
+              data-modal-close-text="Close"
+              data-modal-close-title="Close"
+              data-modal-title="Day 17"
+            >
+              17
+            </button>
+          </li>
+          <li id="day12">
+            <button
+              class="js-modal button"
+              data-modal-prefix-class="simple"
+              data-modal-content-id="day12_modal"
+              data-modal-describedby-id="modal_description"
+              data-modal-close-text="Close"
+              data-modal-close-title="Close"
+              data-modal-title="Day 12"
+            >
+              12
+            </button>
+          </li>
+          <li id="day19">
+            <button
+              class="js-modal button"
+              data-modal-prefix-class="simple"
+              data-modal-content-id="day19_modal"
+              data-modal-describedby-id="modal_description"
+              data-modal-close-text="Close"
+              data-modal-close-title="Close"
+              data-modal-title="Day 19"
+            >
+              19
+            </button>
+          </li>
+          <li id="day1">
+            <button
+              class="js-modal button"
+              data-modal-prefix-class="simple"
+              data-modal-content-id="day1_modal"
+              data-modal-describedby-id="modal_description"
+              data-modal-close-text="Close"
+              data-modal-close-title="Close"
+              data-modal-title="Day 1"
+            >
+              1
+            </button>
+          </li>
+          <li id="day9">
+            <button
+              class="js-modal button"
+              data-modal-prefix-class="simple"
+              data-modal-content-id="day9_modal"
+              data-modal-describedby-id="modal_description"
+              data-modal-close-text="Close"
+              data-modal-close-title="Close"
+              data-modal-title="Day 9"
+            >
+              9
+            </button>
+          </li>
+          <li id="day22">
+            <button
+              class="js-modal button"
+              data-modal-prefix-class="simple"
+              data-modal-content-id="day22_modal"
+              data-modal-describedby-id="modal_description"
+              data-modal-close-text="Close"
+              data-modal-close-title="Close"
+              data-modal-title="Day 22"
+            >
+              22
+            </button>
+          </li>
+          <li id="day10">
+            <button
+              class="js-modal button"
+              data-modal-prefix-class="simple"
+              data-modal-content-id="day10_modal"
+              data-modal-describedby-id="modal_description"
+              data-modal-close-text="Close"
+              data-modal-close-title="Close"
+              data-modal-title="Day 10"
+            >
+              10
+            </button>
+          </li>
+          <li id="day14">
+            <button
+              class="js-modal button"
+              data-modal-prefix-class="simple"
+              data-modal-content-id="day14_modal"
+              data-modal-describedby-id="modal_description"
+              data-modal-close-text="Close"
+              data-modal-close-title="Close"
+              data-modal-title="Day 14"
+            >
+              14
+            </button>
+          </li>
+          <li id="day2">
+            <button
+              class="js-modal button"
+              data-modal-prefix-class="simple"
+              data-modal-content-id="day2_modal"
+              data-modal-describedby-id="modal_description"
+              data-modal-close-text="Close"
+              data-modal-close-title="Close"
+              data-modal-title="Day 2"
+            >
+              2
+            </button>
+          </li>
+          <li id="day18">
+            <button
+              class="js-modal button"
+              data-modal-prefix-class="simple"
+              data-modal-content-id="day18_modal"
+              data-modal-describedby-id="modal_description"
+              data-modal-close-text="Close"
+              data-modal-close-title="Close"
+              data-modal-title="Day 18"
+            >
+              18
+            </button>
+          </li>
+          <li id="day21">
+            <button
+              class="js-modal button"
+              data-modal-prefix-class="simple"
+              data-modal-content-id="day21_modal"
+              data-modal-describedby-id="modal_description"
+              data-modal-close-text="Close"
+              data-modal-close-title="Close"
+              data-modal-title="Day 21"
+            >
+              21
+            </button>
+          </li>
+          <li id="day16">
+            <button
+              class="js-modal button"
+              data-modal-prefix-class="simple"
+              data-modal-content-id="day16_modal"
+              data-modal-describedby-id="modal_description"
+              data-modal-close-text="Close"
+              data-modal-close-title="Close"
+              data-modal-title="Day 16"
+            >
+              16
+            </button>
+          </li>
+          <li id="day5">
+            <button
+              class="js-modal button"
+              data-modal-prefix-class="simple"
+              data-modal-content-id="day5_modal"
+              data-modal-describedby-id="modal_description"
+              data-modal-close-text="Close"
+              data-modal-close-title="Close"
+              data-modal-title="Day 5"
+            >
+              5
+            </button>
+          </li>
+          <li id="day24">
+            <button
+              class="js-modal button"
+              data-modal-prefix-class="simple"
+              data-modal-content-id="day24_modal"
+              data-modal-describedby-id="modal_description"
+              data-modal-close-text="Close"
+              data-modal-close-title="Close"
+              data-modal-title="Day 24"
+            >
+              24
+            </button>
+          </li>
+          <li id="day3">
+            <button
+              class="js-modal button"
+              data-modal-prefix-class="simple"
+              data-modal-content-id="day3_modal"
+              data-modal-describedby-id="modal_description"
+              data-modal-close-text="Close"
+              data-modal-close-title="Close"
+              data-modal-title="Day 3"
+            >
+              3
+            </button>
+          </li>
+          <li id="day23">
+            <button
+              class="js-modal button"
+              data-modal-prefix-class="simple"
+              data-modal-content-id="day23_modal"
+              data-modal-describedby-id="modal_description"
+              data-modal-close-text="Close"
+              data-modal-close-title="Close"
+              data-modal-title="Day 23"
+            >
+              23
+            </button>
+          </li>
+          <li id="day15">
+            <button
+              class="js-modal button"
+              data-modal-prefix-class="simple"
+              data-modal-content-id="day15_modal"
+              data-modal-describedby-id="modal_description"
+              data-modal-close-text="Close"
+              data-modal-close-title="Close"
+              data-modal-title="Day 15"
+            >
+              15
+            </button>
+          </li>
+          <li id="day8">
+            <button
+              class="js-modal button"
+              data-modal-prefix-class="simple"
+              data-modal-content-id="day8_modal"
+              data-modal-describedby-id="modal_description"
+              data-modal-close-text="Close"
+              data-modal-close-title="Close"
+              data-modal-title="Day 8"
+            >
+              8
+            </button>
+          </li>
+          <li id="day20">
+            <button
+              class="js-modal button"
+              data-modal-prefix-class="simple"
+              data-modal-content-id="day20_modal"
+              data-modal-describedby-id="modal_description"
+              data-modal-close-text="Close"
+              data-modal-close-title="Close"
+              data-modal-title="Day 20"
+            >
+              20
+            </button>
+          </li>
+          <li id="day11">
+            <button
+              class="js-modal button"
+              data-modal-prefix-class="simple"
+              data-modal-content-id="day11_modal"
+              data-modal-describedby-id="modal_description"
+              data-modal-close-text="Close"
+              data-modal-close-title="Close"
+              data-modal-title="Day 11"
+            >
+              11
+            </button>
+          </li>
+          <li id="day6">
+            <button
+              class="js-modal button"
+              data-modal-prefix-class="simple"
+              data-modal-content-id="day6_modal"
+              data-modal-describedby-id="modal_description"
+              data-modal-close-text="Close"
+              data-modal-close-title="Close"
+              data-modal-title="Day 6"
+            >
+              6
+            </button>
+          </li>
+          <li id="day13">
+            <button
+              class="js-modal button"
+              data-modal-prefix-class="simple"
+              data-modal-content-id="day13_modal"
+              data-modal-describedby-id="modal_description"
+              data-modal-close-text="Close"
+              data-modal-close-title="Close"
+              data-modal-title="Day 13"
+            >
+              13
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div id="day1_modal" class="hidden">
+        <div class="music">
+          <audio
+            src="./Music/A1 cavalry.mp3"
+            controls
+            style="width: 100px"
+          ></audio>
+        </div>
+        <div class="adimg">
+          <a href="https://www.whychristmas.com/customs/advent.shtml"
+            ><img
+              src="./advent/Advent1.gif"
+              alt="Find out more about Advent"
+              width="300"
+              height="300"
+              loading="lazy"
+          /></a>
+        </div>
+      </div>
+      <div id="day2_modal" class="hidden">
+        <div class="music">
+          <audio
+            src="./Music/A2 last christmas.mp3"
+            controls
+            style="width: 100px"
+          ></audio>
+        </div>
+        <div class="adimg">
+          <img
+            src="./advent/Advent2.gif"
+            alt="Sing some Christmas Karaoke"
+            width="300"
+            height="300"
+            loading="lazy"
+          />
+        </div>
+      </div>
+      <div id="day3_modal" class="hidden">
+        <div class="music">
+          <audio
+            src="./Music/A3 mariah-carey-all-i-want-for-christmas.mp3"
+            controls
+            style="width: 100px"
+          ></audio>
+        </div>
+        <div class="adimg">
+          <img
+            src="./advent/Advent3.png"
+            alt="Find out more about Christmas Trees"
+            width="300"
+            height="300"
+            loading="lazy"
+          />
+        </div>
+      </div>
+      <div id="day4_modal" class="hidden">
+        <div class="music">
+          <audio
+            src="./Music/A4 luther-vandross-every-year.mp3"
+            controls
+            style="width: 100px"
+          ></audio>
+        </div>
+        <div class="adimg">
+          <img src="./advent/Advent4.gif" alt="Find out more about Mistletoe"
+          width="300" height="300" loading="lazy"
+        </div>
+      </div>
+      <div id="day5_modal" class="hidden">
+        <div class="music">
+          <audio
+            src="./Music/A5 baby.mp3"
+            controls
+            style="width: 100px"
+          ></audio>
+        </div>
+        <div class="adimg">
+          <img
+            src="./advent/Advent5.gif"
+            alt="Find out more about the date of Christmas"
+            width="300"
+            height="300"
+            loading="lazy"
+          />
+        </div>
+      </div>
+      <div id="day6_modal" class="hidden">
+        <div class="music">
+          <audio
+            src="./Music/A6 michael-bubl-winter-wonderland.mp3"
+            controls
+            style="width: 100px"
+          ></audio>
+        </div>
+        <div class="adimg">
+          <img
+            src="./advent/Advent6.gif"
+            alt="Find out more about Santa"
+            width="250"
+            height="300"
+            loading="lazy"
+          />
+        </div>
+      </div>
+      <div id="day7_modal" class="hidden">
+        <div class="music">
+          <audio
+            src="./Music/A7 believe.mp3"
+            controls
+            style="width: 100px"
+          ></audio>
+        </div>
+        <div class="adimg">
+          <img
+            src="./advent/Advent7.gif"
+            alt="Find out more about Snow and Ice!"
+            width="300"
+            height="300"
+            loading="lazy"
+          />
+        </div>
+      </div>
+      <div id="day8_modal" class="hidden">
+        <div class="music">
+          <audio
+            src="./Music/A8 Paul McCartney - Wonderful Christmastime .mp3"
+            controls
+            style="width: 100px"
+          ></audio>
+        </div>
+        <div class="adimg">
+          <img
+            src="./advent/Advent8.png"
+            alt="Find out more about an Angel visiting Mary"
+            width="180"
+            height="300"
+            loading="lazy"
+          />
+        </div>
+      </div>
+      <div id="day9_modal" class="hidden">
+        <div class="music">
+          <audio
+            src="./Music/A9 cliff-richard-mistletoe-and-wine.mp3"
+            controls
+            style="width: 100px"
+          ></audio>
+        </div>
+        <div class="adimg">
+          <img
+            src="./advent/Advent9.png"
+            alt="Find out more about Christmas around the world"
+            width="150"
+            height="300"
+            loading="lazy"
+          />
+        </div>
+      </div>
+      <div id="day10_modal" class="hidden">
+        <div class="music">
+          <audio
+            src="./Music/A10 Bon Jovi _ Please come home for Christmas.mp3"
+            controls
+            style="width: 100px"
+          ></audio>
+        </div>
+        <div class="adimg">
+          <img
+            src="./advent/Advent10.png"
+            alt="Find out more about the Holly and the Ivy!"
+            width="300"
+            height="300"
+            loading="lazy"
+          />
+        </div>
+      </div>
+      <div id="day11_modal" class="hidden">
+        <div class="music">
+          <audio
+            src="./Music/A11 faith-hill-where-are-you-christmas.mp3"
+            controls
+            style="width: 100px"
+          ></audio>
+        </div>
+        <div class="adimg">
+          <img
+            src="./advent/Advent11.png"
+            alt="Find out more about the shepherds"
+            width="300"
+            height="300"
+            loading="lazy"
+          />
+        </div>
+      </div>
+      <div id="day12_modal" class="hidden">
+        <div class="music">
+          <audio
+            src="./Music/A12 happy-xmas-war-is-over.mp3"
+            controls
+            style="width: 100px"
+          ></audio>
+        </div>
+        <div class="adimg">
+          <img
+            src="./advent/Advent12.png"
+            alt="Find out more about Christmas Cards"
+            width="300"
+            height="300"
+            loading="lazy"
+          />
+        </div>
+      </div>
+      <div id="day13_modal" class="hidden">
+        <div class="music">
+          <audio
+            src="./Music/A13 mel-smith-kim-wilde-rockin-around-the-christmas-tree.mp3"
+            controls
+            style="width: 100px"
+          ></audio>
+        </div>
+        <div class="adimg">
+          <img
+            src="./advent/Advent13.gif"
+            alt="Find out more about the Christmas Pickle"
+            width="300"
+            height="300"
+            loading="lazy"
+          />
+        </div>
+      </div>
+      <div id="day14_modal" class="hidden">
+        <div class="music">
+          <audio
+            src="./Music/A14 Walking in the air.mp3"
+            controls
+            style="width: 100px"
+          ></audio>
+        </div>
+        <div class="adimg">
+          <img
+            src="./advent/Advent14.gif"
+            alt="Find out more about Christmas Bells"
+            width="300"
+            height="300"
+            loading="lazy"
+          />
+        </div>
+      </div>
+      <div id="day15_modal" class="hidden">
+        <div class="music">
+          <audio
+            src="./Music/A15 nat-king-cole-the-christmas-song-1961.mp3"
+            controls
+            style="width: 100px"
+          ></audio>
+        </div>
+        <div class="adimg">
+          <img
+            src="./advent/Advent15.png"
+            alt="Find out more about Christmas Crackers"
+            width="300"
+            height="300"
+            loading="lazy"
+          />
+        </div>
+      </div>
+      <div id="day16_modal" class="hidden">
+        <div class="music">
+          <audio
+            src="./Music/A16 sleigh-ride.mp3"
+            controls
+            style="width: 100px"
+          ></audio>
+        </div>
+        <div class="adimg">
+          <img
+            src="./advent/Advent16.png"
+            alt="Find out more about Poinsettias"
+            width="300"
+            height="300"
+            loading="lazy"
+          />
+        </div>
+      </div>
+      <div id="day17_modal" class="hidden">
+        <div class="music">
+          <audio
+            src="./Music/A17 jingle-bells.mp3"
+            controls
+            style="width: 100px"
+          ></audio>
+        </div>
+        <div class="adimg">
+          <img
+            src="./advent/Advent17.gif"
+            alt="Find out more about Christmas Puddings"
+            width="300"
+            height="300"
+            loading="lazy"
+          />
+        </div>
+      </div>
+      <div id="day18_modal" class="hidden">
+        <div class="music">
+          <audio
+            src="./Music/A4 luther-vandross-every-year.mp3"
+            controls
+            style="width: 100px"
+          ></audio>
+        </div>
+        <div class="adimg">
+          <img
+            src="./advent/Advent18.gif"
+            alt="Find out more about the Wise Men"
+            width="300"
+            height="300"
+            loading="lazy"
+          />
+        </div>
+      </div>
+      <div id="day19_modal" class="hidden">
+        <div class="music">
+          <audio
+            src="./Music/A19 fairytale.mp3"
+            controls
+            style="width: 100px"
+          ></audio>
+        </div>
+        <div class="adimg">
+          <img
+            src="./advent/Advent19.webp"
+            alt="Find out more about Candy Canes!"
+            width="300"
+            height="300"
+            loading="lazy"
+          />
+        </div>
+      </div>
+      <div id="day20_modal" class="hidden">
+        <div class="music">
+          <audio
+            src="./Music/A20 santa-baby.mp3"
+            controls
+            style="width: 100px"
+          ></audio>
+        </div>
+        <div class="adimg">
+          <img
+            src="./advent/Advent20.gif"
+            alt="Find out more about Christingles"
+            width="300"
+            height="300"
+            loading="lazy"
+          />
+        </div>
+      </div>
+      <div id="day21_modal" class="hidden">
+        <div class="music">
+          <audio
+            src="./Music/A21 queen-thank-god-it-s-christmas.mp3"
+            controls
+            style="width: 100px"
+          ></audio>
+        </div>
+        <div class="adimg">
+          <img
+            src="./advent/Advent21.gif"
+            alt="Try out a different Christmas greeting..."
+            width="300"
+            height="300"
+            loading="lazy"
+          />
+        </div>
+      </div>
+      <div id="day22_modal" class="hidden">
+        <div class="music">
+          <audio
+            src="./Music/A22 chris-rea-driving-home-for-christmas.mp3"
+            controls
+            style="width: 100px"
+          ></audio>
+        </div>
+        <div class="adimg">
+          <img
+            src="./advent/Advent22.gif"
+            alt="Find out more about Christmas Carols"
+            width="300"
+            height="300"
+            loading="lazy"
+          />
+        </div>
+      </div>
+      <div id="day23_modal" class="hidden">
+        <div class="music">
+          <audio
+            src="./Music/A23 Slade.mp3"
+            controls
+            style="width: 100px"
+          ></audio>
+        </div>
+        <div class="adimg">
+          <img
+            src="./advent/Advent23.gif"
+            alt="Find out more about Christmas Presents"
+            width="300"
+            height="300"
+            loading="lazy"
+          />
+        </div>
+      </div>
+      <div id="day24_modal" class="hidden">
+        <div class="music">
+          <audio
+            src="./Music/A24 Santa Claus Is Coming To Town.mp3"
+            controls
+            style="width: 100px"
+          ></audio>
+        </div>
+        <div class="adimg">
+          <img
+            src="./advent/Advent24.gif"
+            alt="Find out more about Christmas Eve"
+            width="300"
+            height="300"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+    <script>
+      var date = new Date();
+      var month = date.getMonth();
+      var day = date.getDate();
+
+      //var day = 1;
+      //var month = 11;
+
+      if (month == 11) {
+        // Executes when conditiona1 is true
+        if (day < 2) {
+          document.getElementById("day2").innerHTML =
+            "<button class='button closed' disabled>2</button>";
+        }
+
+        if (day < 3) {
+          document.getElementById("day3").innerHTML =
+            "<button class='button closed' disabled>3</button>";
+        }
+
+        if (day < 4) {
+          document.getElementById("day4").innerHTML =
+            "<button class='button closed' disabled>4</button>";
+        }
+
+        if (day < 5) {
+          document.getElementById("day5").innerHTML =
+            "<button class='button closed' disabled>5</button>";
+        }
+
+        if (day < 6) {
+          document.getElementById("day6").innerHTML =
+            "<button class='button closed' disabled>6</button>";
+        }
+
+        if (day < 7) {
+          document.getElementById("day7").innerHTML =
+            "<button class='button closed' disabled>7</button>";
+        }
+
+        if (day < 8) {
+          document.getElementById("day8").innerHTML =
+            "<button class='button closed' disabled>8</button>";
+        }
+
+        if (day < 9) {
+          document.getElementById("day9").innerHTML =
+            "<button class='button closed' disabled>9</button>";
+        }
+
+        if (day < 10) {
+          document.getElementById("day10").innerHTML =
+            "<button class='button closed' disabled>10</button>";
+        }
+
+        if (day < 11) {
+          document.getElementById("day11").innerHTML =
+            "<button class='button closed' disabled>11</button>";
+        }
+
+        if (day < 12) {
+          document.getElementById("day12").innerHTML =
+            "<button class='button closed' disabled>12</button>";
+        }
+
+        if (day < 13) {
+          document.getElementById("day13").innerHTML =
+            "<button class='button closed' disabled>13</button>";
+        }
+
+        if (day < 14) {
+          document.getElementById("day14").innerHTML =
+            "<button class='button closed' disabled>14</button>";
+        }
+
+        if (day < 15) {
+          document.getElementById("day15").innerHTML =
+            "<button class='button closed' disabled>17</button>";
+        }
+
+        if (day < 16) {
+          document.getElementById("day16").innerHTML =
+            "<button class='button closed' disabled>16</button>";
+        }
+
+        if (day < 17) {
+          document.getElementById("day17").innerHTML =
+            "<button class='button closed' disabled>17</button>";
+        }
+
+        if (day < 18) {
+          document.getElementById("day18").innerHTML =
+            "<button class='button closed' disabled>18</button>";
+        }
+
+        if (day < 19) {
+          document.getElementById("day19").innerHTML =
+            "<button class='button closed' disabled>19</button>";
+        }
+
+        if (day < 20) {
+          document.getElementById("day20").innerHTML =
+            "<button class='button closed' disabled>20</button>";
+        }
+
+        if (day < 21) {
+          document.getElementById("day21").innerHTML =
+            "<button class='button closed' disabled>21</button>";
+        }
+
+        if (day < 22) {
+          document.getElementById("day22").innerHTML =
+            "<button class='button closed' disabled>22</button>";
+        }
+
+        if (day < 23) {
+          document.getElementById("day23").innerHTML =
+            "<button class='button closed' disabled>23</button>";
+        }
+
+        if (day < 24) {
+          document.getElementById("day24").innerHTML =
+            "<button class='button closed' disabled>24</button>";
+        }
+
+        if (day == 25) {
+          document.getElementById("calendar").innerHTML =
+            "<div id='xmas'><h2>Happy Christmas!</h2><p><a href='https://www.whychristmas.com/story/birth.shtml'><img src='i/story-birth.svg' alt='Find out about the birth of Jesus'/></a><p><a href='https://www.whychristmas.com/story/birth.shtml'>Find out about the birth of Jesus</a></p></div>";
+        }
+
+        if (day >= 26) {
+          document.getElementById("calendar").innerHTML =
+            "<div id='nocal'><h2>Sorry, you're too late!</h2><p>You'll have to wait until next December to see the Advent Calendar!</p></div>";
+        }
+      } else {
+        document.getElementById("calendar").innerHTML =
+          "<div id='nocal'><h2>Coming Soon!</h2><p>The Advent Calendar will be ready in December. Make sure you visit every day to open the door!</p></div>";
+      }
+    </script>
+    <script
+      defer
+      src="script.js"
+      data-cf-beacon='{"token": "ea6a8ed9a1e64603b466964954457c85"}'
+    ></script>
+  </body>
+</html>

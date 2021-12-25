@@ -5,10 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="all" />
     <title>Advent Calendar</title>
-    <meta
-      name="description"
-      content="Advent Calendar"
-    />
+    <meta name="description" content="Advent Calendar" />
     <link rel="canonical" href="#" />
     <link rel="home" href="#" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -19,10 +16,7 @@
       property="og:image"
       content="https://www.whychristmas.com/adventcalendar/i/share.png"
     />
-    <meta
-      property="og:description"
-      content=""
-    />
+    <meta property="og:description" content="" />
     <meta property="og:url" content="https://andrewingweb.github.io/Advent2/" />
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
     <link
@@ -38,7 +32,11 @@
       href="./image/holiday-icon-png-9801-Windows.ico"
     />
     <link rel="manifest" href="./image/holiday-icon-png-9801-Windows.ico" />
-    <link rel="mask-icon" href="./image/holiday-icon-png-9801-Windows.ico" color="#226a00" />
+    <link
+      rel="mask-icon"
+      href="./image/holiday-icon-png-9801-Windows.ico"
+      color="#226a00"
+    />
     <meta name="msapplication-TileColor" content="#226a00" />
     <meta name="theme-color" content="#226a00" />
     <link
@@ -60,7 +58,7 @@
 
   <body>
     <header>
-      <h1>Christmas is coming!</h1>
+      <h1 id="adv1"></h1>
     </header>
     <main>
       <div id="calendar">
@@ -933,10 +931,14 @@
           document.getElementById("day24").innerHTML =
             "<button class='button closed' disabled>24</button>";
         }
+        if (day < 25) {
+          document.getElementById("adv1").innerHTML =
+            "<div><h1>Christmas is coming!</h1></div>";
+        }
 
         if (day == 25) {
           document.getElementById("calendar").innerHTML =
-            "<div id='xmas'><h2>Happy Christmas!</h2><p><a href='https://www.whychristmas.com/story/birth.shtml'><img src='i/story-birth.svg' alt='Find out about the birth of Jesus'/></a><p><a href='https://www.whychristmas.com/story/birth.shtml'>Find out about the birth of Jesus</a></p></div>";
+            "<div id='xmas'><h2>Happy Christmas!</h2><p></p></div>";
         }
 
         if (day >= 26) {
@@ -945,7 +947,7 @@
         }
       } else {
         document.getElementById("calendar").innerHTML =
-          "<div id='nocal'><h2>Coming Soon!</h2><p>The Advent Calendar will be ready in December. Make sure you visit every day to open the door!</p></div>";
+          "<div id='nocal'><h2>Coming Soon!</h2><p>The Advent Calendar will be ready in December.</p></div>";
       }
     </script>
     <script
